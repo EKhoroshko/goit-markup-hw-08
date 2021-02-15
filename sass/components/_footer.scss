@@ -4,11 +4,7 @@
     padding-bottom: 60px;
 
     &__conteiner {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
+        @extend %conteiner;
         display: flex;
         align-items: baseline;
     }
@@ -51,23 +47,6 @@
 
 }
 
-.logo {
-    color: $accent-text-color;
-    font-family: $text-logo;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    &__footer {
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-
-    &__footer--light {
-        color: $background-main-color;
-    }
-}
-
 .social {
 
     &__title {
@@ -94,16 +73,10 @@
     }
 
     &__link {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-
+        @extend %soc__net;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.1);
         fill: $background-main-color;
-
         transition: $animation;
     }
 
@@ -153,24 +126,10 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-    &__botton {
-        padding: 10px 29px;
-        border-radius: 4px;
-        background-color: $accent-text-color;
-        font-family: $main-font;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        display: inline-flex;
-        align-items: center;
-        text-align: center;
-        color: $background-main-color;
-        cursor: pointer;
-        border: none;
-    }
-
-    &__botton:hover,
-    &__botton:focus {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &__input:hover,
+    &__input:focus {
+        outline: $accent-text-color;
+        border: 1px solid $accent-text-color;
+        transition: $animation;
     }
 }
