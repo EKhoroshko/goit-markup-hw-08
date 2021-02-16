@@ -972,6 +972,8 @@ img {
 .team__name {
   margin-top: 0px;
   margin-bottom: 10px;
+  padding: 0px;
+  width: 100%;
   color: #212121;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -981,6 +983,7 @@ img {
   text-align: center;
 }
 .team__proff {
+  width: 100%;
   margin-top: 0px;
   margin-bottom: 16px;
   color: #757575;

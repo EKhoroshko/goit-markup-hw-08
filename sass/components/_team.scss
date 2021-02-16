@@ -59,6 +59,8 @@
     &__name {
         margin-top: 0px;
         margin-bottom: 10px;
+        padding: 0px;
+        width: 100%;
 
         color: $title-text-color;
         font-family: $main-font;
@@ -70,6 +72,7 @@
     }
 
     &__proff {
+        width: 100%;
         margin-top: 0px;
         margin-bottom: 16px;
         color: $primary-text-color;
