@@ -1299,9 +1299,6 @@ img {
   margin-bottom: 15px;
   margin-right: 8px;
 }
-.filter__items:nth-child(n+4) {
-  margin-bottom: 0px;
-}
 .filter__button {
   padding: 6px 22px;
   border-radius: 4px;
