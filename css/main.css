@@ -413,16 +413,6 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
 .hero__conteiner {
   padding-left: 15px;
   padding-right: 15px;
@@ -847,75 +837,79 @@ img {
   background-image: url(../images/astronaut.svg);
 }
 
-@media screen and (min-width: 1200px) {
+.occupation {
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
   .occupation {
-    padding-bottom: 94px;
-  }
-  .occupation__conteiner {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-  }
-  .occupation__title {
-    margin: 0px;
-    margin-bottom: 50px;
-    color: #212121;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-  }
-  .occupation__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .occupation__items {
-    position: relative;
-    display: block;
-    max-width: 370px;
-    height: 294px;
-    z-index: -1;
-    line-height: 0px;
-  }
-  .occupation__icon {
-    display: block;
-    width: 100%;
-  }
-  .occupation__wraper {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 70px;
-    min-width: 100%;
-    bottom: 0;
-    background: rgba(47, 48, 58, 0.8);
-  }
-  .occupation__caption {
-    margin: 0px;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
+    display: none;
   }
 }
+.occupation__conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+.occupation__title {
+  margin: 0px;
+  margin-bottom: 50px;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.occupation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.occupation__items {
+  position: relative;
+  display: block;
+  max-width: 370px;
+  height: 294px;
+  z-index: -1;
+  line-height: 0px;
+}
+.occupation__icon {
+  display: block;
+  width: 100%;
+}
+.occupation__wraper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  min-width: 100%;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+.occupation__caption {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -925,7 +919,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .team {
     width: 480px;
   }
@@ -1059,16 +1053,8 @@ img {
 .clients__items {
   margin-right: 30px;
   margin-bottom: 30px;
-  -ms-flex-preferred-size: calc(100%/2 - 30px);
-      flex-basis: calc(100%/2 - 30px);
-  width: 210px;
+  width: calc((100% - 2 * 30px)/2);
   height: 90px;
-}
-.clients__items:nth-child(2n) {
-  margin-right: 0px;
-}
-.clients__items:nth-last-child(-n+2) {
-  margin-bottom: 0px;
 }
 .clients__link {
   display: -webkit-box;
