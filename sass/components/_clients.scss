@@ -1,49 +1,65 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &__conteiner {
-        @extend %conteiner;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 738px;
     }
 
     &__title {
         margin-top: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-family: $main-font;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
+        letter-spacing: 0.03em;
         text-align: center;
         color: $title-text-color;
     }
 
     &__list {
-        display: flex;
-        justify-content: space-between;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     &__items {
         margin-right: 30px;
-        width: 170px;
+        margin-bottom: 30px;
+        flex-basis: calc(100%/2 - 30px);
+        width: 210px;
         height: 90px;
     }
 
-    &__items:last-child {
+    &__items:nth-child(2n) {
         margin-right: 0px;
     }
 
+    &__items:nth-last-child(-n +2) {
+        margin-bottom: 0px;
+    }
+
     &__link {
-        @extend %soc__net;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
         border: 1px solid $color-icon;
         border-radius: 4px;
         fill: $color-icon;
-
-        transition: $animation;
     }
 
-    &__link:hover,
-    &__link:focus {
-        fill: $accent-text-color;
-        border: 1px solid $accent-text-color;
-    }
 }
