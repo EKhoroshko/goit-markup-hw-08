@@ -1058,15 +1058,17 @@ img {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
   margin-top: 0px;
   margin-left: 0px;
 }
 .clients__items {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: calc((100% - 2 * 30px)/2);
+  width: calc((100% - 1 * 30px)/2);
   height: 90px;
+}
+.clients__items:nth-child(2n+2) {
+  margin-right: 0px;
 }
 .clients__link {
   display: -webkit-box;

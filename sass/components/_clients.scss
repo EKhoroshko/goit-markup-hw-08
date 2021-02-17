@@ -32,7 +32,6 @@
     &__list {
         display: inline-flex;
         flex-wrap: wrap;
-        margin-right: -30px;
         margin-top: 0px;
         margin-left: 0px;
     }
@@ -40,8 +39,12 @@
     &__items {
         margin-right: 30px;
         margin-bottom: 30px;
-        width: calc((100% - 2 * 30px)/2);
+        width: calc((100% - 1 * 30px)/2);
         height: 90px;
+    }
+
+    &__items:nth-child(2n + 2) {
+        margin-right: 0px;
     }
 
     &__link {
