@@ -940,6 +940,9 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.team__list {
+  width: 100%;
+}
 .team__items {
   width: 450px;
   margin-bottom: 30px;
