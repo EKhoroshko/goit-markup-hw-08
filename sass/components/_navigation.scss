@@ -9,33 +9,36 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: teal;
+        background-color: $background-main-color;
 
         &.is-open {
             display: block;
+            padding: 48px 40px;
         }
     }
 
-    &__list {}
+    &__list {
+        margin-bottom: 302px;
+    }
 
     &__items {
-        margin-right: 50px;
+        margin-bottom: 32px;
     }
 
     &__items:last-child {
-        margin-right: 0px;
+        margin-bottom: 0px;
     }
 
     &__link {
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        /*padding-top: 32px;
+        padding-bottom: 32px;*/
         align-items: center;
         color: $title-text-color;
         font-family: $main-font;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 40px;
+        line-height: 1.175;
         letter-spacing: 0.02em;
         text-decoration: none;
 
@@ -54,7 +57,7 @@
         color: $accent-text-color;
     }
 
-    &__link--active::after {
+    /*&__link--active::after {
         display: block;
         content: "";
         position: absolute;
@@ -64,7 +67,7 @@
         height: 4px;
         border-radius: 2px;
         background-color: $accent-text-color;
-    }
+    }*/
 }
 
 .button {
@@ -75,6 +78,11 @@
     padding: 12px 8px;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+    }
 
     & .icon-close {
         display: none;

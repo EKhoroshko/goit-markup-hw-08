@@ -1,27 +1,30 @@
 .contact {
+    margin-bottom: 64px;
+
     &__list {
         display: flex;
-        margin-left: auto;
+        flex-direction: column-reverse;
     }
+
 
     &__items {
-        margin-right: 50px;
+        margin-bottom: 32px;
     }
 
-    &__items:last-child {
-        margin-right: 0px;
+    &__items:first-child {
+        margin-bottom: 0px;
     }
 
     &__link {
         display: flex;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        /*padding-top: 32px;
+        padding-bottom: 32px;*/
         font-family: $main-font;
         color: $primary-text-color;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 24px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         transition: $animation;
     }
@@ -33,7 +36,7 @@
 
     &__mail-icon,
     &__phone-icon {
-        display: inline-block;
+        display: none;
         margin-right: 10px;
         fill: currentColor;
     }

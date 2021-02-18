@@ -1,0 +1,29 @@
+.community {
+    @media screen and (min-width:767px) {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+
+    &__items {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+
+    &__link {
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: $accent-text-color;
+    }
+}
