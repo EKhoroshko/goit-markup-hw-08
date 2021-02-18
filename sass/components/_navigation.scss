@@ -5,7 +5,6 @@
 
     &__conteiner {
         display: none;
-
         position: absolute;
         top: 100%;
         left: 0;
@@ -79,17 +78,17 @@
 
     & .icon-close {
         display: none;
-        width: 24px;
-        height: 16px;
-    }
-
-    &.is-open .icon-close {
-        display: block;
         width: 19px;
         height: 19px;
     }
 
+    &.is-open .icon-close {
+        display: block;
+    }
+
     &.is-open .icon-menu {
         display: none;
+        width: 24px;
+        height: 16px;
     }
 }

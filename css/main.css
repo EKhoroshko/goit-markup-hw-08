@@ -488,16 +488,16 @@ img {
 }
 .button .icon-close {
   display: none;
-  width: 24px;
-  height: 16px;
-}
-.button.is-open .icon-close {
-  display: block;
   width: 19px;
   height: 19px;
 }
+.button.is-open .icon-close {
+  display: block;
+}
 .button.is-open .icon-menu {
   display: none;
+  width: 24px;
+  height: 16px;
 }
 
 .contact__list {
