@@ -1,11 +1,11 @@
 .contact {
     margin-bottom: 64px;
+    padding: 0px 40px;
 
     &__list {
         display: flex;
         flex-direction: column-reverse;
     }
-
 
     &__items {
         margin-bottom: 32px;
