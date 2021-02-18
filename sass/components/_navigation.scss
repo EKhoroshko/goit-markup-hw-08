@@ -1,9 +1,27 @@
 .site-nav {
-    @extend %position;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    &__list {
-        @extend %position;
+    &__conteiner {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: teal;
+
+        & .is-open {
+            display: block;
+        }
     }
+
+    &__conteiner.is-open {
+        display: block;
+    }
+
+    &__list {}
 
     &__items {
         margin-right: 50px;
@@ -51,5 +69,25 @@
         height: 4px;
         border-radius: 2px;
         background-color: $accent-text-color;
+    }
+}
+
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    & .icon-menu {
+        display: none;
+    }
+
+    &.is-open .icon-menu {
+        display: block;
+    }
+
+    &.is-open .icon-close {
+        display: none;
     }
 }

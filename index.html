@@ -11,45 +11,70 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+
+  <body modal-open>
     <header class="header">
       <div class="header__conteiner">
         <nav class="site-nav">
           <a class="logo logo__head" href="./index.html"
             >Web<span class="logo__head--dark">Studio</span></a
           >
-          <ul class="site-nav__list">
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="./index.html"
-                ><span class="site-nav__link--active">Студия</span></a
-              >
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="site-nav__items">
-              <a class="site-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact__list">
-          <li class="contact__items">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__mail-icon" width="16" height="12">
-                <use href="./images/sprite.svg#mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__items">
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__phone-icon" width="10" height="16">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
+          <button
+            class="button is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav__conteiner"
+            data-menu-button
+          >
+            <svg
+              width="20"
+              height="20"
+              aria-label="переключатель мобильного меню"
             >
-          </li>
-        </ul>
+              <use class="icon-close" href="./images/sprite.svg#close"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="site-nav__conteiner" id="site-nav__conteiner" data-menu>
+            <div class="navigation">
+              <ul class="site-nav__list">
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="./index.html"
+                    ><span class="site-nav__link--active">Студия</span></a
+                  >
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav__items">
+                  <a class="site-nav__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="contact__list">
+                <li class="contact__items">
+                  <a class="contact__link" href="mailto:info@devstudio.com">
+                    <svg class="contact__mail-icon" width="16" height="12">
+                      <use href="./images/sprite.svg#mail"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact__items">
+                  <a class="contact__link" href="tel:+380961111111">
+                    <svg class="contact__phone-icon" width="10" height="16">
+                      <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -521,5 +546,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -54,7 +54,8 @@
     }
 
     &__card {
-        padding: 30px 122px 24px;
+        padding-top: 30px;
+        padding-bottom: 24px;
         border-radius: 0px 0px 4px 4px;
         background-color: $background-main-color;
     }
@@ -86,17 +87,15 @@
 
     &__list--team-info {
         display: flex;
+        justify-content: center;
     }
 
     &__box {
-        margin-right: 10px;
         width: 44px;
         height: 44px;
     }
 
-    &__box:last-child {
-        margin-right: 0px;
-    }
+
 
     &__block {
         display: flex;
