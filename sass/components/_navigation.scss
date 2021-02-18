@@ -12,13 +12,9 @@
         width: 100%;
         background-color: teal;
 
-        & .is-open {
+        &.is-open {
             display: block;
         }
-    }
-
-    &__conteiner.is-open {
-        display: block;
     }
 
     &__list {}
@@ -74,20 +70,26 @@
 
 .button {
     display: inline-block;
+    width: 40px;
+    height: 40px;
     margin: 0;
-    padding: 0;
+    padding: 12px 8px;
     border: none;
     background-color: transparent;
 
-    & .icon-menu {
+    & .icon-close {
         display: none;
-    }
-
-    &.is-open .icon-menu {
-        display: block;
+        width: 24px;
+        height: 16px;
     }
 
     &.is-open .icon-close {
+        display: block;
+        width: 19px;
+        height: 19px;
+    }
+
+    &.is-open .icon-menu {
         display: none;
     }
 }

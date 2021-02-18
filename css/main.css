@@ -430,9 +430,6 @@ img {
   width: 100%;
   background-color: teal;
 }
-.site-nav__conteiner .is-open {
-  display: block;
-}
 .site-nav__conteiner.is-open {
   display: block;
 }
@@ -482,18 +479,24 @@ img {
 
 .button {
   display: inline-block;
+  width: 40px;
+  height: 40px;
   margin: 0;
-  padding: 0;
+  padding: 12px 8px;
   border: none;
   background-color: transparent;
 }
-.button .icon-menu {
+.button .icon-close {
   display: none;
-}
-.button.is-open .icon-menu {
-  display: block;
+  width: 24px;
+  height: 16px;
 }
 .button.is-open .icon-close {
+  display: block;
+  width: 19px;
+  height: 19px;
+}
+.button.is-open .icon-menu {
   display: none;
 }
 
