@@ -449,8 +449,6 @@ img {
 }
 .site-nav__box {
   padding: 0px 40px;
-}
-.site-nav__list {
   margin-bottom: 302px;
 }
 .site-nav__items {
@@ -564,9 +562,6 @@ img {
 .community {
   padding-left: 40px;
   padding-right: 83px;
-  padding-bottom: 43px;
-  width: 100%;
-  max-width: 357px;
 }
 @media screen and (min-width: 767px) {
   .community {
