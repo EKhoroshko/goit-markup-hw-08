@@ -2,16 +2,39 @@
     margin-bottom: 64px;
     padding: 0px 40px;
 
+    @media screen and (min-width:768px) {
+        margin-bottom: 0px;
+        padding: 21px 0px;
+        margin-left: auto;
+    }
+
     &__list {
         display: flex;
         flex-direction: column-reverse;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__items {
         margin-bottom: 32px;
 
+        @media screen and(min-width:768px) {
+            margin-bottom: 10px;
+        }
+
         &:first-child {
-            margin-bottom: 0px;
+            @media screen and(max-width:767px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        &:last-child {
+            @media screen and(min-width:768px) {
+                margin-bottom: 0px;
+            }
         }
     }
 
@@ -27,6 +50,10 @@
         line-height: 1.16;
         letter-spacing: 0.02em;
         transition: $animation;
+
+        @media screen and(min-width:768px) {
+            font-size: 12px;
+        }
     }
 
     &__link:hover,

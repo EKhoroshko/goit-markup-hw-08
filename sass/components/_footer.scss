@@ -3,24 +3,30 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
     &__conteiner {
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
 
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 738px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     &__info {
-        margin-right: 0px;
+        @media screen and (min-width: 768px) {
+            margin-left: 76px;
+        }
     }
 }
 
@@ -63,6 +69,10 @@
 
 .social {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
 
     &__title {
         margin-top: 0px;
@@ -111,6 +121,11 @@
 
 .subs {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &_icon {
         margin-left: 10px;

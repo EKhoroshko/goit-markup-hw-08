@@ -12,31 +12,57 @@
         width: 100%;
         background-color: $background-main-color;
 
+        @media screen and (min-width:768px) {
+            display: flex;
+            position: relative;
+        }
+
         &.is-open {
-            display: block;
-            padding: 48px 0px;
+            @media screen and(max-width:767px) {
+                display: block;
+                padding: 48px 0px;
+            }
+
         }
     }
 
     &__box {
         padding: 0px 40px;
         margin-bottom: 302px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 0px;
+            padding: 0px;
+            margin-left: 88px;
+        }
+
     }
 
-    &__list {}
+    &__list {
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
 
     &__items {
         margin-bottom: 32px;
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 0px;
+            margin-right: 50px;
+        }
     }
 
     &__items:last-child {
         margin-bottom: 0px;
+
+        @media screen and (min-width:768px) {
+            margin-right: 0px;
+        }
     }
 
     &__link {
         display: block;
-        /*padding-top: 32px;
-        padding-bottom: 32px;*/
         align-items: center;
         color: $title-text-color;
         font-family: $main-font;
@@ -47,6 +73,14 @@
         text-decoration: none;
 
         transition: $animation;
+
+        @media screen and (min-width:768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+        }
     }
 
     &__link:hover,
@@ -61,17 +95,19 @@
         color: $accent-text-color;
     }
 
-    /*&__link--active::after {
-        display: block;
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: $accent-text-color;
-    }*/
+    &__link--active::after {
+        @media screen and (min-width:768px) {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accent-text-color;
+        }
+    }
 }
 
 .button {
@@ -105,5 +141,9 @@
         display: none;
         width: 24px;
         height: 16px;
+    }
+
+    @media screen and (min-width:767px) {
+        display: none;
     }
 }

@@ -15,7 +15,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 738px;
+        width: 768px;
     }
 
     &__title {
@@ -33,6 +33,11 @@
 
     &__list {
         width: 100%;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     &__items {
@@ -42,10 +47,25 @@
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+            width: 100%;
+            margin-right: 30px;
+        }
+    }
+
+    &__items:nth-child(2n + 2) {
+        @media screen and (min-width: 768px) {
+            margin-right: 0px
+        }
     }
 
     &__items:last-child {
-        margin-bottom: 0px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0px;
+        }
+
     }
 
     &__icon {
@@ -94,8 +114,6 @@
         width: 44px;
         height: 44px;
     }
-
-
 
     &__block {
         display: flex;
