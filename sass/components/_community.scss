@@ -7,6 +7,8 @@
 
     &__list {
         display: flex;
+        width: 100%;
+        max-width: 357px;
     }
 
     &__items {
