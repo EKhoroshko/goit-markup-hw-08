@@ -1,6 +1,6 @@
 .community {
-    padding-left: 40px;
-    padding-right: 83px;
+    padding: 0px 40px;
+
 
     @media screen and (min-width:767px) {
         display: none;
@@ -8,7 +8,7 @@
 
     &__list {
         display: flex;
-
+        flex-wrap: wrap;
     }
 
     &__items {

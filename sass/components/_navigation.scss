@@ -9,7 +9,7 @@
         top: 0;
         left: 0;
         z-index: 3;
-        min-width: 480px;
+        max-width: 480px;
         width: 100%;
         background-color: $background-main-color;
 
@@ -21,10 +21,11 @@
 
     &__box {
         padding: 0px 40px;
-        margin-bottom: 302px;
     }
 
-    &__list {}
+    &__list {
+        margin-bottom: 302px;
+    }
 
     &__items {
         margin-bottom: 32px;

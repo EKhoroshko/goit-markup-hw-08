@@ -9,10 +9,10 @@
 
     &__items {
         margin-bottom: 32px;
-    }
 
-    &__items:first-child {
-        margin-bottom: 0px;
+        &:first-child {
+            margin-bottom: 0px;
+        }
     }
 
     &__link {
