@@ -19,15 +19,15 @@
 
         &.is-open {
             @media screen and(max-width:767px) {
+                width: 400px;
                 display: block;
-                padding: 48px 0px;
+                padding: 48px 40px;
             }
 
         }
     }
 
     &__box {
-        padding: 0px 40px;
         margin-bottom: 302px;
 
         @media screen and (min-width:768px) {
