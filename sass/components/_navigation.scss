@@ -19,6 +19,7 @@
 
         &.is-open {
             @media screen and(max-width:767px) {
+                box-sizing: border-box;
                 max-width: 400px;
                 display: block;
                 padding: 48px 40px;
