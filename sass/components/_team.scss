@@ -141,4 +141,10 @@
         margin-right: 10px;
         fill: $color-icon;
     }
+
+    &__block:hover,
+    &__block:focus {
+        background-color: #2196f3;
+        fill: #ffffff;
+    }
 }

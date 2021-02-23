@@ -103,4 +103,9 @@
         fill: $color-icon;
     }
 
+    &__link:hover,
+    &__link:focus {
+        fill: #2196f3;
+        border: 1px solid #2196f3;
+    }
 }
