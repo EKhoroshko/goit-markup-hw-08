@@ -520,6 +520,11 @@ img {
     line-height: 1.14;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-nav__link {
+    font-size: 14px;
+  }
+}
 .site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
@@ -679,6 +684,7 @@ img {
   .contact__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 .contact__link:hover, .contact__link:focus {
