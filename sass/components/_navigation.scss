@@ -5,9 +5,11 @@
 
     &__conteiner {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         z-index: 3;
         width: 100%;
         background-color: $background-main-color;
@@ -20,7 +22,6 @@
         &.is-open {
             @media screen and(max-width:767px) {
                 min-width: 320px;
-                max-width: 480px;
                 display: block;
                 padding: 48px 0px;
             }
@@ -120,7 +121,6 @@
 }
 
 .button {
-    position: absolute;
     right: 15px;
     z-index: 5;
     display: inline-block;
@@ -137,6 +137,8 @@
     }
 
     & .icon-close {
+        position: absolute;
+        right: 15px;
         display: none;
         width: 19px;
         height: 19px;
@@ -147,6 +149,7 @@
     }
 
     &.is-open .icon-menu {
+        position: absolute;
         display: none;
         width: 24px;
         height: 16px;

@@ -15,15 +15,15 @@
 		padding-right: 15px;
 
 		@media screen and (min-width: 480px) {
-			width: 480px;
+			max-width: 480px;
 		}
 
 		@media screen and (min-width: 768px) {
-			width: 768px;
+			max-width: 768px;
 		}
 
 		@media screen and (min-width: 1200px) {
-			width: 1200px;
+			max-width: 1200px;
 		}
 	}
 
@@ -71,12 +71,12 @@
 .warrantly {
 	&__items {
 		@media screen and (max-width: 767px) {
-			max-width: 450px;
+			width: 100%;
 		}
 
 
 		@media screen and (min-width: 768px) {
-			max-width: 354px;
+			flex-basis: calc((100% - 1 * 30px)/2);
 			margin-right: 30px;
 		}
 
@@ -87,7 +87,7 @@
 		}
 
 		@media screen and (min-width: 1200px) {
-			width: 270px;
+			wflex-basis: calc((100% - 3 * 30px)/4);
 
 			&:last-child {
 				margin-right: 0px;
