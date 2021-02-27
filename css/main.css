@@ -455,6 +455,7 @@ img {
     min-width: 320px;
     display: block;
     padding: 48px 0px;
+    overflow-y: scroll;
   }
 }
 .site-nav__box {
