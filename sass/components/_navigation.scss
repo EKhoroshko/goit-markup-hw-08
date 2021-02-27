@@ -22,7 +22,9 @@
         &.is-open {
             @media screen and(max-width:767px) {
                 min-width: 320px;
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 padding: 48px 0px;
                 overflow-y: scroll;
             }
@@ -30,7 +32,7 @@
     }
 
     &__box {
-        margin-bottom: 302px;
+
         padding-left: 40px;
 
         @media screen and (min-width:768px) {
@@ -52,7 +54,11 @@
     }
 
     &__items {
-        margin-bottom: 32px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width:480px) {
+            margin-bottom: 32px;
+        }
 
         @media screen and (min-width:768px) {
             margin-bottom: 0px;
@@ -74,12 +80,17 @@
         color: $title-text-color;
         font-family: $main-font;
         font-weight: 500;
-        font-size: 40px;
-        line-height: 1.175;
+        font-size: 30px;
+        line-height: 1.56;
         letter-spacing: 0.02em;
         text-decoration: none;
 
         transition: $animation;
+
+        @media screen and (min-width:480px) {
+            font-size: 40px;
+            line-height: 1.175;
+        }
 
         @media screen and (min-width:768px) {
             padding-top: 32px;
@@ -100,10 +111,13 @@
     }
 
     &__link--active {
-        padding-top: 32px;
-        padding-bottom: 32px;
         position: relative;
         color: $accent-text-color;
+
+        @media screen and (min-width:768px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     &__link--active::after {
@@ -138,11 +152,14 @@
     }
 
     & .icon-close {
-        position: absolute;
         right: 15px;
         display: none;
         width: 19px;
         height: 19px;
+    }
+
+    &.is-open {
+        position: fixed;
     }
 
     &.is-open .icon-close {
@@ -150,7 +167,6 @@
     }
 
     &.is-open .icon-menu {
-        position: absolute;
         display: none;
         width: 24px;
         height: 16px;

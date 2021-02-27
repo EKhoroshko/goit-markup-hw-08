@@ -87,7 +87,7 @@
 		}
 
 		@media screen and (min-width: 1200px) {
-			wflex-basis: calc((100% - 3 * 30px)/4);
+			flex-basis: calc((100% - 3 * 30px)/4);
 
 			&:last-child {
 				margin-right: 0px;
