@@ -3,6 +3,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+    }
+
     &__conteiner {
         margin-left: auto;
         margin-right: auto;
@@ -20,7 +24,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            max-width: 1600px;
+            max-width: 1200px;
             align-items: baseline;
         }
     }
