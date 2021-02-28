@@ -272,10 +272,15 @@
 
     &__icon {
         width: 15px;
-        height: 15px;
+        height: 10px;
         margin-right: 8px;
         border: 2px solid $title-text-color;
         border-radius: 2px;
+
+        @media screen and(min-width:380px) {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     &__input {
