@@ -367,27 +367,30 @@ img {
   display: block;
 }
 
-.header__conteiner {
+.filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
 }
 @media screen and (min-width: 480px) {
-  .header__conteiner {
+  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__conteiner {
+  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__conteiner {
+  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
     max-width: 1200px;
   }
+}
+
+.header__conteiner {
+  position: relative;
 }
 
 .logo {
@@ -828,27 +831,6 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/des/Img3200x1200.jpg);
   }
 }
-.hero__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .hero__conteiner {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__conteiner {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__conteiner {
-    max-width: 1200px;
-  }
-}
 .hero__title {
   margin-left: auto;
   margin-right: auto;
@@ -906,27 +888,6 @@ img {
   .warranty {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-}
-.warranty__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .warranty__conteiner {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .warranty__conteiner {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .warranty__conteiner {
-    max-width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1102,27 +1063,6 @@ img {
     padding-bottom: 94px;
   }
 }
-.team__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .team__conteiner {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__conteiner {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__conteiner {
-    max-width: 1200px;
-  }
-}
 .team__title {
   margin: 0px;
   margin-bottom: 30px;
@@ -1261,27 +1201,6 @@ img {
     padding-bottom: 94px;
   }
 }
-.clients__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .clients__conteiner {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__conteiner {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__conteiner {
-    max-width: 1200px;
-  }
-}
 .clients__title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -1382,20 +1301,8 @@ img {
     margin-right: auto;
   }
 }
-.footer__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .footer__conteiner {
-    max-width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer__conteiner {
-    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1405,7 +1312,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__conteiner {
-    max-width: 1200px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -2006,27 +1912,6 @@ img {
   .filter {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-}
-.filter__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .filter__conteiner {
-    width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .filter__conteiner {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .filter__conteiner {
-    width: 1200px;
   }
 }
 .filter__list {
