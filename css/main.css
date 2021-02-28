@@ -1932,14 +1932,20 @@ img {
           align-items: center;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (min-width: 480px) {
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .checkbox__icon {
-  width: 15px;
-  height: 10px;
+  width: 10px;
+  height: 8px;
   margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 2px;
@@ -1978,11 +1984,17 @@ img {
 .checkbox__link {
   color: #2196f3;
   font-family: Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: underline;
   margin-left: 3px;
+}
+@media screen and (min-width: 480px) {
+  .checkbox__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .filter {

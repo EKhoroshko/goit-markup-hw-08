@@ -264,15 +264,20 @@
         align-items: center;
         font-family: $main-font;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.16;
         letter-spacing: 0.02em;
         color: $primary-text-color;
+
+        @media screen and(min-width:480px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
     }
 
     &__icon {
-        width: 15px;
-        height: 10px;
+        width: 10px;
+        height: 8px;
         margin-right: 8px;
         border: 2px solid $title-text-color;
         border-radius: 2px;
@@ -315,10 +320,15 @@
     &__link {
         color: $accent-text-color;
         font-family: $main-font;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.16;
         letter-spacing: 0.02em;
         text-decoration: underline;
         margin-left: 3px;
+
+        @media screen and(min-width:480px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
     }
 }
