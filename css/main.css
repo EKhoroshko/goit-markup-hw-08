@@ -367,30 +367,51 @@ img {
   display: block;
 }
 
-.filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
+.filter__conteiner, .occupation__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .header__conteiner, .hero__conteiner {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
-  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
+  .filter__conteiner, .occupation__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .header__conteiner, .hero__conteiner {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
+  .filter__conteiner, .occupation__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .header__conteiner, .hero__conteiner {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .filter__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .hero__conteiner, .header__conteiner {
+  .filter__conteiner, .occupation__conteiner, .footer__conteiner, .clients__conteiner, .team__conteiner, .warranty__conteiner, .header__conteiner, .hero__conteiner {
     max-width: 1200px;
   }
 }
 
 .header__conteiner {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.occupation__conteiner {
+  max-width: 1200px;
 }
 
 .logo {
@@ -987,13 +1008,6 @@ img {
     display: none;
   }
 }
-.occupation__conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
-}
 .occupation__title {
   margin: 0px;
   margin-bottom: 50px;
@@ -1299,22 +1313,6 @@ img {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__conteiner {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 @media screen and (min-width: 768px) {

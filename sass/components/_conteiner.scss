@@ -16,3 +16,46 @@
         max-width: 1200px;
     }
 }
+
+.hero__conteiner {
+    @extend %conteiner;
+}
+
+.header__conteiner {
+    @extend %conteiner;
+    position: relative;
+}
+
+.warranty__conteiner {
+    @extend %conteiner;
+}
+
+.team__conteiner {
+    @extend %conteiner;
+}
+
+.clients__conteiner {
+    @extend %conteiner;
+}
+
+.footer__conteiner {
+    @extend %conteiner;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+}
+
+.occupation__conteiner {
+    @extend %conteiner;
+    max-width: 1200px;
+}
+
+.filter__conteiner {
+    @extend %conteiner;
+}
