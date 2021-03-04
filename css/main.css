@@ -2076,13 +2076,20 @@ img {
 }
 .card-overlay__text {
   margin: 0px;
-  padding: 77px 24px;
+  padding: 24px 24px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .card-overlay__text {
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
 }
 @media screen and (min-width: 768px) {
   .card-overlay__text {
