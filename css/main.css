@@ -938,7 +938,6 @@ img {
 }
 .warranty__text {
   margin: 0px;
-  margin-bottom: 30px;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -951,6 +950,9 @@ img {
   margin: 0px;
 }
 
+.warrantly__items {
+  margin-bottom: 30px;
+}
 @media screen and (max-width: 767px) {
   .warrantly__items {
     width: 100%;
@@ -962,6 +964,9 @@ img {
         flex-basis: calc((100% - 1 * 30px)/2);
     margin-right: 30px;
   }
+  .warrantly__items:nth-child(n+3) {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .warrantly__items:nth-child(2n+2) {
@@ -972,6 +977,7 @@ img {
   .warrantly__items {
     -ms-flex-preferred-size: calc((100% - 3 * 30px)/4);
         flex-basis: calc((100% - 3 * 30px)/4);
+    margin-bottom: 0px;
   }
   .warrantly__items:last-child {
     margin-right: 0px;
