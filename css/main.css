@@ -1906,6 +1906,11 @@ img {
     line-height: 1.16;
   }
 }
+@media screen and (max-width: 767px) {
+  .checkbox__link {
+    width: 100%;
+  }
+}
 
 .filter {
   padding-top: 60px;
